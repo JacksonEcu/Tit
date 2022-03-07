@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::resource('hojas',App\Http\Controllers\HojaController::class);
+Route::resource('hojas',App\Http\Controllers\HojaController::class)->middleware('auth');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
