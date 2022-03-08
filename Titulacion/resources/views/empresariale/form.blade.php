@@ -106,9 +106,21 @@
             {{ Form::text('comentarios', $empresariale->comentarios, ['class' => 'form-control' . ($errors->has('comentarios') ? ' is-invalid' : '')]) }}
             {!! $errors->first('comentarios', '<div class="invalid-feedback">:message</div>') !!}
         </div>
+        <div class="row g-3">
+        <b> <h3>Firmas</h3></b>
+        <div class="col-3 "> 
+            {{ Form::label('cor_carrera') }}
+            {{ Form::text('cor_carrera', $empresariale->cor_carrera, ['class' => 'form-control' . ($errors->has('cor_carrera') ? ' is-invalid' : ''), 'placeholder' => 'Cor Carrera']) }}
+            {!! $errors->first('cor_carrera', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="col-3 "> 
+            {{ Form::label('tut_empresa') }}
+            {{ Form::text('tut_empresa', $empresariale->tut_empresa, ['class' => 'form-control' . ($errors->has('tut_empresa') ? ' is-invalid' : ''), 'placeholder' => 'Tut Empresa']) }}
+            {!! $errors->first('tut_empresa', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
 
     </div>
     <div class="box-footer mt20">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Crear</button>
     </div>
 </div>

@@ -32,6 +32,8 @@ return new class extends Migration
             $table->string('fuente');
             $table->string('beneficios');
             $table->string('comentarios');
+            $table->string('cor_carrera');
+            $table->string('tut_empresa');
             $table->timestamps();
         });
     }
