@@ -36,7 +36,7 @@
                                         <th>No</th>
                                         
 										<th>Nom Estudiante</th>
-										<th>Nivel</th>
+										<th>Nivel entidad</th>
 										<th>Ent Formadora</th>
                                         <th>Titulo Proyecto</th>
 
