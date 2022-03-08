@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Empresariale;
 use Illuminate\Http\Request;
+use PDF;
+
 
 /**
  * Class EmpresarialeController
@@ -22,6 +24,15 @@ class EmpresarialeController extends Controller
 
         return view('empresariale.index', compact('empresariales'))
             ->with('i', (request()->input('page', 1) - 1) * $empresariales->perPage());
+    }
+
+    public function pdf()
+    {
+        $empresariales = Empresariale::paginate();
+
+        $pdf = PDF::loadView('empresariale.pdf',['empresariales'=>$empresariales]);
+    
+        return $pdf->stream();
     }
 
     /**
