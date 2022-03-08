@@ -84,20 +84,22 @@
     </tr>
      </tbody>
 </table>
-<div>
-<hr style="inline-size:15%;"/>
-<p>Coordinador de Carrera</p>
-  <p>{{ $empresariale->cor_carrera }}</p>
-  <hr style="inline-size:15%;"/>
-  <p>Estudiante</p>
-  <p>{{ $empresariale->nom_estudiante}}</p>
-  <hr style="inline-size:15%;"/>
-  <p>Tutor Empresarial</p>
-  <p>{{ $empresariale->tut_empresa }}</p>
-</div>
-
-                    </div>
-                </div>
+      <div>
+          <hr style="inline-size:15%;"/>
+          <p>Coordinador de Carrera</p>
+            <p>{{ $empresariale->cor_carrera }}</p>
+            <hr style="inline-size:15%;"/>
+            <p>Estudiante</p>
+            <p>{{ $empresariale->nom_estudiante}}</p>
+            <hr style="inline-size:15%;"/>
+            <p>Tutor Empresarial</p>
+            <p>{{ $empresariale->tut_empresa }}</p>
+      </div>
+        </div>
+            </div>
+            <a href="{{ route('empresariales.pdf') }}" class="btn btn-primary btn-sm"  data-placement="left">
+										{{ __('Proyecto Empresarial PDF') }}
+									</a>
             </div>
         </div>
     </section>
