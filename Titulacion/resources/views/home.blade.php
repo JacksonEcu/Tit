@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
 <p>
     actualizar este modelo 
