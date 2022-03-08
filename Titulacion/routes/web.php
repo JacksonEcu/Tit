@@ -20,4 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 Route::resource('hojas',App\Http\Controllers\HojaController::class)->middleware('auth');
 
+Route::resource('empresariales', App\Http\Controllers\EmpresarialeController::class);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
