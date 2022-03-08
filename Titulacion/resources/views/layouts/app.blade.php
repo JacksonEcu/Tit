@@ -32,12 +32,21 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+
+                     @if(Auth::check())
+
                     <ul class="navbar-nav me-auto">
+                        <a class="nav-link" href="{{ route('hojas.index') }}">{{ __('Hoja de Vida') }}</a>
+                        <a class="nav-link" href="{{ route('empresariales.index') }}">{{ __('Proyecto') }}</a>
 
                     </ul>
+                     @endif
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
+
+                    
+
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
