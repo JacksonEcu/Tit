@@ -86,11 +86,14 @@
 </table>
 <div>
 <hr style="inline-size:15%;"/>
-  <p>{{ $empresariale->nom_estudiante }}</p>
+<p>Coordinador de Carrera</p>
+  <p>{{ $empresariale->cor_carrera }}</p>
   <hr style="inline-size:15%;"/>
-  <p>{{ $empresariale->nom_estudiante }}</p>
+  <p>Estudiante</p>
+  <p>{{ $empresariale->nom_estudiante}}</p>
   <hr style="inline-size:15%;"/>
-  <p>{{ $empresariale->nom_estudiante }}</p>
+  <p>Tutor Empresarial</p>
+  <p>{{ $empresariale->tut_empresa }}</p>
 </div>
 
                     </div>

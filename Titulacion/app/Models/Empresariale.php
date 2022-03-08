@@ -25,6 +25,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property $fuente
  * @property $beneficios
  * @property $comentarios
+ * @property $cor_carrera
+ * @property $tut_empresa
  * @property $created_at
  * @property $updated_at
  *
@@ -52,6 +54,8 @@ class Empresariale extends Model
 		'fuente' => 'required',
 		'beneficios' => 'required',
 		'comentarios' => 'required',
+		'cor_carrera' => 'required',
+		'tut_empresa' => 'required',
     ];
 
     protected $perPage = 20;
@@ -61,7 +65,7 @@ class Empresariale extends Model
      *
      * @var array
      */
-    protected $fillable = ['nom_estudiante','carrera','nivel','pe_lectivo','ent_formadora','hr_practicas','tit_proyecto','analisis','obj_proyecto','des_proyecto','indicador','meta','presupuesto','medicion','fuente','beneficios','comentarios'];
+    protected $fillable = ['nom_estudiante','carrera','nivel','pe_lectivo','ent_formadora','hr_practicas','tit_proyecto','analisis','obj_proyecto','des_proyecto','indicador','meta','presupuesto','medicion','fuente','beneficios','comentarios','cor_carrera','tut_empresa'];
 
 
 
