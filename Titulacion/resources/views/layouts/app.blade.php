@@ -38,6 +38,7 @@
                     <ul class="navbar-nav me-auto">
                         <a class="nav-link" href="{{ route('hojas.index') }}">{{ __('Hoja de Vida') }}</a>
                         <a class="nav-link" href="{{ route('empresariales.index') }}">{{ __('Proyecto') }}</a>
+                        <a class="nav-link" href="{{ route('empresariales.index') }}">{{ __('Subida Distibutivo') }}</a>
 
                     </ul>
                      @endif

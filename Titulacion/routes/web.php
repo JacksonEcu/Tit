@@ -17,8 +17,12 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+
 Auth::routes();
+
+Route::get('hojas/pdf',[App\Http\Controllers\HojaController::class, 'pdf'])->name('hojas.pdf');
 Route::resource('hojas',App\Http\Controllers\HojaController::class)->middleware('auth');
+
 
 Route::resource('empresariales', App\Http\Controllers\EmpresarialeController::class)->middleware('auth');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

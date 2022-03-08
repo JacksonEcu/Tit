@@ -16,11 +16,18 @@
                                 {{ __('Hoja') }}
                             </span>
 
-                             <div class="float-right">
-                                <a href="{{ route('hojas.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
-                                </a>
-                              </div>
+							
+
+                             	<div class="float-right">
+									<a href="{{ route('hojas.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+									{{ __('Crear Hoja de Vida') }}
+									</a>
+&nbsp;
+&nbsp;
+									<a href="{{ route('hojas.pdf') }}" class="btn btn-primary btn-sm"  data-placement="left">
+										{{ __('PDF') }}
+									</a>
+                            	</div>
                         </div>
                     </div>
                     @if ($message = Session::get('success'))

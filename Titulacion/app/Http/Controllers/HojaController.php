@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Hoja;
 use Illuminate\Http\Request;
+use PDF;
 
 /**
  * Class HojaController
@@ -22,6 +23,16 @@ class HojaController extends Controller
 
         return view('hoja.index', compact('hojas'))
             ->with('i', (request()->input('page', 1) - 1) * $hojas->perPage());
+    }
+
+    public function pdf()
+    {
+        $hojas = Hoja::paginate();
+
+        $pdf = PDF::loadView('hoja.pdf',['hojas'=>$hojas]);
+    
+        return $pdf->stream();
+
     }
 
     /**
