@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -89,6 +90,122 @@
                         <div class="form-group">
                             <strong>Fechafi:</strong>
                             {{ $hoja->fechafi }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Empresa:</strong>
+                            {{ $hoja->empresa }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Cargo:</strong>
+                            {{ $hoja->cargo }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Descripcion:</strong>
+                            {{ $hoja->descripcion }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Periodouno:</strong>
+                            {{ $hoja->periodouno }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Periododos:</strong>
+                            {{ $hoja->periododos }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Empresados:</strong>
+                            {{ $hoja->empresados }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Cargodos:</strong>
+                            {{ $hoja->cargodos }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Descripciondos:</strong>
+                            {{ $hoja->descripciondos }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Periodou:</strong>
+                            {{ $hoja->periodou }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Periodod:</strong>
+                            {{ $hoja->periodod }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Idioma:</strong>
+                            {{ $hoja->idioma }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Nivel:</strong>
+                            {{ $hoja->nivel }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Idiomados:</strong>
+                            {{ $hoja->idiomados }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Niveldos:</strong>
+                            {{ $hoja->niveldos }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Areau:</strong>
+                            {{ $hoja->areau }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Conocimientou:</strong>
+                            {{ $hoja->conocimientou }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Nivelu:</strong>
+                            {{ $hoja->nivelu }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Aread:</strong>
+                            {{ $hoja->aread }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Conocimientod:</strong>
+                            {{ $hoja->conocimientod }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Niveld:</strong>
+                            {{ $hoja->niveld }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Areat:</strong>
+                            {{ $hoja->areat }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Conocimientot:</strong>
+                            {{ $hoja->conocimientot }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Niveltr:</strong>
+                            {{ $hoja->niveltr }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Nom:</strong>
+                            {{ $hoja->nom }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Relacion:</strong>
+                            {{ $hoja->relacion }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Contacto:</strong>
+                            {{ $hoja->contacto }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Nomu:</strong>
+                            {{ $hoja->nomu }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Relaciond:</strong>
+                            {{ $hoja->relaciond }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Contactod:</strong>
+                            {{ $hoja->contactod }}
                         </div>
 
                     </div>

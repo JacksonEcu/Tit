@@ -25,6 +25,35 @@ use Illuminate\Database\Eloquent\Model;
  * @property $curso
  * @property $fechaini
  * @property $fechafi
+ * @property $empresa
+ * @property $cargo
+ * @property $descripcion
+ * @property $periodouno
+ * @property $periododos
+ * @property $empresados
+ * @property $cargodos
+ * @property $descripciondos
+ * @property $periodou
+ * @property $periodod
+ * @property $idioma
+ * @property $nivel
+ * @property $idiomados
+ * @property $niveldos
+ * @property $areau
+ * @property $conocimientou
+ * @property $nivelu
+ * @property $aread
+ * @property $conocimientod
+ * @property $niveld
+ * @property $areat
+ * @property $conocimientot
+ * @property $niveltr
+ * @property $nom
+ * @property $relacion
+ * @property $contacto
+ * @property $nomu
+ * @property $relaciond
+ * @property $contactod
  * @property $created_at
  * @property $updated_at
  *
@@ -52,6 +81,35 @@ class Hoja extends Model
 		'curso' => 'required',
 		'fechaini' => 'required',
 		'fechafi' => 'required',
+		'empresa' => 'required',
+		'cargo' => 'required',
+		'descripcion' => 'required',
+		'periodouno' => 'required',
+		'periododos' => 'required',
+		'empresados' => 'required',
+		'cargodos' => 'required',
+		'descripciondos' => 'required',
+		'periodou' => 'required',
+		'periodod' => 'required',
+		'idioma' => 'required',
+		'nivel' => 'required',
+		'idiomados' => 'required',
+		'niveldos' => 'required',
+		'areau' => 'required',
+		'conocimientou' => 'required',
+		'nivelu' => 'required',
+		'aread' => 'required',
+		'conocimientod' => 'required',
+		'niveld' => 'required',
+		'areat' => 'required',
+		'conocimientot' => 'required',
+		'niveltr' => 'required',
+		'nom' => 'required',
+		'relacion' => 'required',
+		'contacto' => 'required',
+		'nomu' => 'required',
+		'relaciond' => 'required',
+		'contactod' => 'required',
     ];
 
     protected $perPage = 20;
@@ -61,7 +119,7 @@ class Hoja extends Model
      *
      * @var array
      */
-    protected $fillable = ['cedula','nombreuno','nombredos','apellidouno','apellidos','direccion','telefono','correo','colegio','fechaingreso','fechafin','uni','fechainicio','fechafinal','curso','fechaini','fechafi'];
+    protected $fillable = ['cedula','nombreuno','nombredos','apellidouno','apellidos','direccion','telefono','correo','colegio','fechaingreso','fechafin','uni','fechainicio','fechafinal','curso','fechaini','fechafi','empresa','cargo','descripcion','periodouno','periododos','empresados','cargodos','descripciondos','periodou','periodod','idioma','nivel','idiomados','niveldos','areau','conocimientou','nivelu','aread','conocimientod','niveld','areat','conocimientot','niveltr','nom','relacion','contacto','nomu','relaciond','contactod'];
 
 
 
