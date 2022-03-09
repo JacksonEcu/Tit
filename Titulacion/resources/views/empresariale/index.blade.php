@@ -35,9 +35,9 @@
                                     <tr>
                                         <th>No</th>
                                         
-										<th>Nom Estudiante</th>
+										<th>Nombre Estudiante</th>
 										<th>Nivel entidad</th>
-										<th>Ent Formadora</th>
+										<th>Entidad Formadora</th>
                                         <th>Titulo Proyecto</th>
 
                                         <th></th>
@@ -55,10 +55,10 @@
                                             <td>
                                                 <form action="{{ route('empresariales.destroy',$empresariale->id) }}" method="POST">
                                                     <a class="btn btn-sm btn-primary " href="{{ route('empresariales.show',$empresariale->id) }}"><i class="fa fa-fw fa-eye"></i> Visualizar</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('empresariales.edit',$empresariale->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('empresariales.edit',$empresariale->id) }}"><i class="fa fa-fw fa-edit"></i> Editar</a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i>Eliminar</button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -72,3 +72,4 @@
             </div>
         </div>
     </div>
+    @endsection

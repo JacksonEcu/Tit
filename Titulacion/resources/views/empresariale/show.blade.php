@@ -16,91 +16,97 @@
                              <div class="col-4"><img src="http://userscontent2.emaze.com/images/33c58489-cf42-4a76-9ca4-94bb149cfa8d/Slide7_Pic3_636408719339374930.png" 
                                      alt="logo" style="inline-size:auto;"
                                      width="400px" height="100px"> </div>
-                </div>
-            </div>
-                    <div class="card-header">
-                    <div align="center">
-                        <h2>PLANEACIÓN PROYECTO EMPRESARIAL</h2>
-                    </div>
-                        <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('empresariales.index') }}"> Página inicial</a>
-                        </div>
-                    </div>
-
-                    <table class="table table-bordered">
-  <thead>
-<tbody>
-<tr>
-    <th scope="row">Nombre Estudiante</th>
-      <td colspan="2">{{ $empresariale->nom_estudiante }}</td>
-    </tr>
-    <th scope="row">Carrera</th>
-      <td colspan="2">{{ $empresariale->carrera }}</td>
-    </tr>
-    <th scope="row">Nivel</th>
-      <td colspan="2">{{ $empresariale->nivel }}</td>
-    </tr>
-    <th scope="row">Período Lectivo</th>
-      <td colspan="2">{{ $empresariale->pe_lectivo }}</td>
-    </tr>
-    <th scope="row">Entidad Formadora</th>
-      <td colspan="2">{{ $empresariale->ent_formadora }}</td>
-    </tr>
-    <th scope="row">Horas de Formación Prácticas</th>
-      <td colspan="2">{{ $empresariale->hr_practicas }}</td>
-    </tr>
-    <th scope="row">Títullo Proyecto</th>
+  </div>
+</div>
+<div class="card-header">
+      <div align="center">
+              <h2>PLANEACIÓN PROYECTO EMPRESARIAL</h2>
+       </div>
+<div class="float-right">
+      <a class="btn btn-primary" href="{{ route('empresariales.index') }}"> Página inicial</a>
+</div>
+<div>
+    <a href="{{ route('empresariales.pdf') }}" class="btn btn-sm btn-success"  data-placement="center">{{ __('Generar PDF') }}</a>
+</div>
+</div>
+<div class="container">
+		<div class="row">
+			<div class="col">
+				<table class="table table-sm table-bordered">
+					<thead>
+  <tr>
+  <th>Nombre Estudiante</th>
+      <td>{{ $empresariale->nom_estudiante }}</td>
+  </tr>
+  <tr>
+  <th>Carrera</th>
+  <td>{{ $empresariale->carrera }}</td>
+  </tr>
+  <tr>
+  <th>Nivel</th>
+  <td>{{ $empresariale->nivel }}</td>
+  <th>Período Lectivo</th>
+  <td>{{ $empresariale->pe_lectivo }}</td>
+  </tr>
+  <tr>
+  <th>Entidad Formadora</th>
+  <td>{{ $empresariale->ent_formadora }}</td>
+  </tr>
+  <tr>
+  <th>Horas de Formación Prácticas</th>
+      <td>{{ $empresariale->hr_practicas }}</td>
+  </tr><br><br>
+  <tr>
+  <th scope="row" align="left">Titulo del Proyecto</th>
       <td colspan="2">{{ $empresariale->tit_proyecto }}</td>
-    </tr>
-    <th scope="row">Analisis</th>
+  </tr>
+  <tr>
+  <th scope="row" align="left">Analisis de la situación</th>
       <td colspan="2">{{ $empresariale->analisis }}</td>
-    </tr>
-    <th scope="row">Objetivo Proyecto</th>
+  </tr>
+  <tr>
+  <th scope="row" align="left">Objetivo del Proyecto</th>
       <td colspan="2">{{ $empresariale->obj_proyecto }}</td>
-    </tr>
-    <th scope="row">Descripcion del Proyecto</th>
+  </tr>
+  <tr>
+  <th scope="row" align="left">Descripcion del Proyecto</th>
       <td colspan="2">{{ $empresariale->des_proyecto }}</td>
-    </tr>
-    <th scope="row">Indicador</th>
-      <td colspan="2">{{ $empresariale->indicador }}</td>
-    </tr>
-    <th scope="row">Meta</th>
-      <td colspan="2">{{ $empresariale->meta }}</td>
-    </tr>
-    <th scope="row">Presupuesto</th>
-      <td colspan="2">{{ $empresariale->presupuesto }}</td>
-    </tr>
-    <th scope="row">Medicion</th>
-      <td colspan="2">{{ $empresariale->medicion }}</td>
-    </tr>
-    <th scope="row">Fuente</th>
-      <td colspan="2">{{ $empresariale->fuente }}</td>
-    </tr>
-    <th scope="row">Beneficios Esperados</th>
-      <td colspan="2">{{ $empresariale->beneficios }}</td>
-    </tr>
-    <th scope="row">Comentarios</th>
-      <td colspan="2">{{ $empresariale->comentarios }}</td>
-    </tr>
-     </tbody>
-</table>
-<div style="width:230px; height:auto; float:left; display:inline">
+  </tr>
+  <tr>
+  <th scope="row" align="left">Indicador</th>
+  <td colspan="2">{{ $empresariale->indicador }}</td>
+  <th scope="row" align="left">Medicion/Formula</th>
+  <td colspan="2">{{ $empresariale->medicion }}</td>
+  </tr>
+  <tr>
+  <th scope="row" align="left">Meta</th>
+  <td colspan="2">{{ $empresariale->meta }}</td>
+  <th scope="row" align="left">Fuente de Datos</th>
+  <td colspan="2">{{ $empresariale->fuente }}</td>
+  </tr>
+  <th scope="row" align="left">Presupuesto</th>
+  <td colspan="2">{{ $empresariale->meta }}</td>
+  <th scope="row" align="left">Beneficios Esperados</th>
+  <td colspan="2">{{ $empresariale->beneficios }}</td>
+  </tr>
+					</tbody>
+				</table><br>
+<h4>Comentarios</h4>
+<p>{{ $empresariale->comentarios }}</p><br><br>
+<div style="width:100px; height:auto; float:left; display:inline">
         <p align="center">Coordinador de Carrera</p>
         <p align="center">{{ $empresariale->cor_carrera }}</p>
 </div> 
-<div style="width:200px; height:auto; float:left; display:inline"> 
-        <p align="center">Estudiante</p>
-        <p align="center">{{ $empresariale->nom_estudiante }}</p></div> 
+<div style="width:400px; height:auto; float:left; display:inline">
+        <p align="center">Nombre Estudiante</p>
+        <p align="center">{{ $empresariale->nom_estudiante }}</p>
+</div> 
+<div style="width:300px; height:auto; float:left; display:inline"> 
+        <p align="center">Tutor Empresarial</p>
+        <p align="center">{{ $empresariale->tut_empresa }}</p></div> 
 </div>
-<div style="width:200px; height:auto; float:left; display:inline">
-    <p align="center">Tutor Empresarial</p>
-    <p align="center">{{ $empresariale->tut_empresa }}</p>
-    </div>    
+			</div>
+		</div>
 </div>
-            <a href="{{ route('empresariales.pdf') }}" class="btn btn-primary btn-sm"  data-placement="left">
-										{{ __('Proyecto Empresarial PDF') }}
-									</a>
-            </div>
-        </div>
-    </section>
+</section>
 @endsection
