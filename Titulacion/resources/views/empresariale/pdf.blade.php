@@ -80,16 +80,23 @@
 </table>
 <br><br>
 <h4>Comentarios</h4>
-<p>{{ $empresariale->comentarios }}</p>
-          <hr width=40 align="left"/>
-          <p>Coordinador de Carrera</p>
-            <p>{{ $empresariale->cor_carrera }}</p>
-            <hr width=40 align="center"/>
-            <p>Estudiante</p>
-            <p>{{ $empresariale->nom_estudiante}}</p>
-            <hr width=40 align="right"/>
-            <p>Tutor Empresarial</p>
-            <p>{{ $empresariale->tut_empresa }}</p>
+<p>{{ $empresariale->comentarios }}</p><br><br><br><br><br><br><br><br>
+<div style="width:230px; height:auto; float:left; display:inline">
+        <hr width="100"/>
+        <p align="center">Coordinador de Carrera</p>
+        <p align="center">{{ $empresariale->cor_carrera }}</p>
+</div> 
+<div style="width:200px; height:auto; float:left; display:inline"> 
+        <hr width="100"/>
+        <p align="center">Estudiante</p>
+        <p align="center">{{ $empresariale->nom_estudiante }}</p></div> 
+</div>
+<div style="width:200px; height:auto; float:left; display:inline">
+    <hr width="100"/>
+    <p align="center">Tutor Empresarial</p>
+    <p align="center">{{ $empresariale->tut_empresa }}</p>
+    </div>    
+</div> 
 </body>
 </html>
                     
