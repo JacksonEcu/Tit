@@ -20,7 +20,11 @@
     <a href="{{ route('rubricas.pdf') }}" class="btn btn-sm btn-success"  data-placement="center">{{ __('Generar PDF') }}</a>
 </div>
 </div>
-
+<div align="center">
+<img src="http://userscontent2.emaze.com/images/33c58489-cf42-4a76-9ca4-94bb149cfa8d/Slide7_Pic3_636408719339374930.png"
+     width="300"
+     height="101">
+</div>
                     <div class="container">
 		<div class="row">
 			<div class="col">
