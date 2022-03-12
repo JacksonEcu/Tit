@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Rubrica;
 use Illuminate\Http\Request;
+use PDF;
+
 
 /**
  * Class RubricaController
@@ -22,6 +24,15 @@ class RubricaController extends Controller
 
         return view('rubrica.index', compact('rubricas'))
             ->with('i', (request()->input('page', 1) - 1) * $rubricas->perPage());
+    }
+
+    public function pdf()
+    {
+        $rubricas = Rubrica::paginate();
+
+        $pdf = PDF::loadView('rubrica.pdf',['rubricas'=>$rubricas]);
+    
+        return $pdf->stream();
     }
 
     /**

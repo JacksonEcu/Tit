@@ -58,8 +58,8 @@
         </div>
         <div class="row g-3">
         <div class="col-3 ">            
-            {{ Form::label('hasta') }}
-            {{ Form::text('Hasta', $rubrica->hasta, ['class' => 'form-control' . ($errors->has('hasta') ? ' is-invalid' : '')]) }}
+            {{ Form::label('Hasta') }}
+            {{ Form::text('hasta', $rubrica->hasta, ['class' => 'form-control' . ($errors->has('hasta') ? ' is-invalid' : '')]) }}
             {!! $errors->first('hasta', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <b> <h3>Califiación Instituto (50%) </h3></b>
@@ -76,12 +76,12 @@
         <div class="row g-3">
         <div class="col-3 ">             
             {{ Form::label('Adquisición Conocimiento') }}
-            {{ Form::text('Adquisición Conocimiento', $rubrica->ad_conocimiento, ['class' => 'form-control' . ($errors->has('ad_conocimiento') ? ' is-invalid' : '')]) }}
+            {{ Form::text('ad_conocimiento', $rubrica->ad_conocimiento, ['class' => 'form-control' . ($errors->has('ad_conocimiento') ? ' is-invalid' : '')]) }}
             {!! $errors->first('ad_conocimiento', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="col-3 ">             
             {{ Form::label('Aplicación Conocimiento') }}
-            {{ Form::text('Aplicación Conocimiento', $rubrica->ap_conocimiento, ['class' => 'form-control' . ($errors->has('ap_conocimiento') ? ' is-invalid' : '')]) }}
+            {{ Form::text('ap_conocimiento', $rubrica->ap_conocimiento, ['class' => 'form-control' . ($errors->has('ap_conocimiento') ? ' is-invalid' : '')]) }}
             {!! $errors->first('ap_conocimiento', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="row g-3">

@@ -25,6 +25,7 @@ Route::resource('hojas',App\Http\Controllers\HojaController::class)->middleware(
 
 Route::get('empresariales/pdf',[App\Http\Controllers\EmpresarialeController::class, 'pdf'])->name('empresariales.pdf');
 Route::resource('empresariales', App\Http\Controllers\EmpresarialeController::class)->middleware('auth');
+Route::get('rubricas/pdf',[App\Http\Controllers\RubricaController::class, 'pdf'])->name('rubricas.pdf');
 Route::resource('rubricas', App\Http\Controllers\RubricaController::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
