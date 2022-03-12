@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Create Empresariale
+    Empresarial
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Create Empresariale</span>
+                        <span class="card-title">Empresarial</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('empresariales.store') }}"  role="form" enctype="multipart/form-data">
@@ -27,3 +27,4 @@
             </div>
         </div>
     </section>
+    @endsection

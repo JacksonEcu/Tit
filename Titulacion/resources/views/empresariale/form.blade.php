@@ -15,33 +15,33 @@
     <div class="row g-3">
         <div class="col-3 ">
             {{ Form::label('Nombre Estudiante') }}
-            {{ Form::text('nom_estudiante', $empresariale->nom_estudiante, ['class' => 'form-control' . ($errors->has('nom_estudiante') ? ' is-invalid' : ''), 'placeholder' => 'Nom Estudiante']) }}
+            {{ Form::text('nom_estudiante', $empresariale->nom_estudiante, ['class' => 'form-control' . ($errors->has('nom_estudiante') ? ' is-invalid' : '')]) }}
             {!! $errors->first('nom_estudiante', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="col-3 ">
             {{ Form::label('Carrera') }}
-            {{ Form::text('carrera', $empresariale->carrera, ['class' => 'form-control' . ($errors->has('carrera') ? ' is-invalid' : ''), 'placeholder' => 'Carrera']) }}
+            {{ Form::text('carrera', $empresariale->carrera, ['class' => 'form-control' . ($errors->has('carrera') ? ' is-invalid' : '')]) }}
             {!! $errors->first('carrera', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="col-3 ">
             {{ Form::label('Nivel') }}
-            {{ Form::text('nivel', $empresariale->nivel, ['class' => 'form-control' . ($errors->has('nivel') ? ' is-invalid' : ''), 'placeholder' => 'Nivel']) }}
+            {{ Form::text('nivel', $empresariale->nivel, ['class' => 'form-control' . ($errors->has('nivel') ? ' is-invalid' : '')]) }}
             {!! $errors->first('nivel', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="row g-3">
         <div class="col-3 ">
             {{ Form::label('Periodo_lectivo') }}
-            {{ Form::text('pe_lectivo', $empresariale->pe_lectivo, ['class' => 'form-control' . ($errors->has('pe_lectivo') ? ' is-invalid' : ''), 'placeholder' => 'Pe Lectivo']) }}
+            {{ Form::text('pe_lectivo', $empresariale->pe_lectivo, ['class' => 'form-control' . ($errors->has('pe_lectivo') ? ' is-invalid' : '')]) }}
             {!! $errors->first('pe_lectivo', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="col-3 ">
             {{ Form::label('Entidad_formadora') }}
-            {{ Form::text('ent_formadora', $empresariale->ent_formadora, ['class' => 'form-control' . ($errors->has('ent_formadora') ? ' is-invalid' : ''), 'placeholder' => 'Ent Formadora']) }}
+            {{ Form::text('ent_formadora', $empresariale->ent_formadora, ['class' => 'form-control' . ($errors->has('ent_formadora') ? ' is-invalid' : '')]) }}
             {!! $errors->first('ent_formadora', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="col-3 ">
             {{ Form::label('horas de practicas') }}
-            {{ Form::text('hr_practicas', $empresariale->hr_practicas, ['class' => 'form-control' . ($errors->has('hr_practicas') ? ' is-invalid' : ''), 'placeholder' => 'Hr Practicas']) }}
+            {{ Form::text('hr_practicas', $empresariale->hr_practicas, ['class' => 'form-control' . ($errors->has('hr_practicas') ? ' is-invalid' : '')]) }}
             {!! $errors->first('hr_practicas', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="row g-3">
