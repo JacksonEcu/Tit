@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Rubrica;
 use Illuminate\Http\Request;
+use PDF;
 
 /**
  * Class RubricaController
@@ -64,6 +65,14 @@ class RubricaController extends Controller
         return view('rubrica.show', compact('rubrica'));
     }
 
+    public function pdf()
+    {
+        $rubricas = Rubrica::paginate();
+
+        $pdf = PDF::loadView('rubrica.pdf',['rubricas'=>$rubricas]);
+    
+        return $pdf->stream();
+    }
     /**
      * Show the form for editing the specified resource.
      *

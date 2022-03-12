@@ -137,10 +137,10 @@ height: 100%;
   <nav class="main-menu">
     <ul>
       <li>
-        <a href="http://justinfarrow.com">
-          <i class="fa fa-home fa-2x"></i>
+        <a href="{{ route('hojas.create') }}">
+          <i class="fa fa-file-text-o fa-2x"></i>
           <span class="nav-text">
-            Dashboard
+            Hoja de vida
           </span>
         </a>
 
@@ -149,69 +149,54 @@ height: 100%;
         <a href="#">
           <i class="fa fa-laptop fa-2x"></i>
           <span class="nav-text">
-            Stars Components
+            Subida Distributivo
           </span>
         </a>
 
       </li>
       <li class="has-subnav">
-        <a href="#">
-          <i class="fa fa-list fa-2x"></i>
+        <a href="{{ route('empresariales.create') }}">
+          <i class="fa fa-file-o fa-2x"></i>
           <span class="nav-text">
-            Forms
+            Proyecto Empresarial
           </span>
         </a>
 
       </li>
       <li class="has-subnav">
-        <a href="#">
-          <i class="fa fa-folder-open fa-2x"></i>
-          <span class="nav-text">
-            Pages
-          </span>
-        </a>
-
-      </li>
-      <li>
-        <a href="#">
-          <i class="fa fa-bar-chart-o fa-2x"></i>
-          <span class="nav-text">
-            Graphs and Statistics
-          </span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fa fa-font fa-2x"></i>
-          <span class="nav-text">
-            Quotes
-          </span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
+        <a href="{{ route('rubricas.create') }}">
           <i class="fa fa-table fa-2x"></i>
           <span class="nav-text">
-            Tables
+            Rubrica Proyecto Empresarial
+          </span>
+        </a>
+
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-file-text-o fa-2x"></i>
+          <span class="nav-text">
+            PDF Cv
           </span>
         </a>
       </li>
       <li>
         <a href="#">
-          <i class="fa fa-map-marker fa-2x"></i>
+          <i class="fa fa-file-text-o  fa-2x"></i>
           <span class="nav-text">
-            Maps
+           PDF proyecto
           </span>
         </a>
       </li>
       <li>
         <a href="#">
-          <i class="fa fa-info fa-2x"></i>
+          <i class="fa fa-file-text-o  fa-2x"></i>
           <span class="nav-text">
-            Documentation
+            PDF rúbrica
           </span>
         </a>
       </li>
     </ul>
   </nav>
+  
 @endsection
