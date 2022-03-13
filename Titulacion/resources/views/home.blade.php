@@ -177,7 +177,7 @@ height: 100%;
                     <a href="{{ route('datos.store') }}">
                         <i class="fa fa-bar-chart-o fa-2x"></i>
                         <span class="nav-text">
-                            PDF
+                            PDF Empresarial-Rubrica
                         </span>
                     </a>
                 </li>
