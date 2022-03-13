@@ -1,3 +1,10 @@
+@extends('layouts.app')
+
+@section('template_title')
+    Rubrica
+@endsection
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,3 +38,4 @@
 </div>
 </body>
 </html>
+@endsection

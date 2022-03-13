@@ -1,3 +1,10 @@
+@extends('layouts.app')
+
+@section('template_title')
+    Rubrica
+@endsection
+
+@section('content')
 <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -14,7 +21,7 @@
              <th>Nombre</th>
              <th>Nivel</th>
              <th>Entidad Formadora</th>
-             <th>Ver Pdf</th>
+             <th>Documento</th>
         </thead>
         <tbody>
             @foreach ($datos as $d)
@@ -23,7 +30,7 @@
                 <td>{{$d->nombre}}</td>
                 <td>{{$d->nivel}}</td>
                 <td>{{$d->entidad_formadora}}</td>
-                <td><a class="btn btn-danger" href="Archivos/{{$d->documento}}" target="blank">ver documento</a></td>
+                <td><a class="btn btn-primary" href="Archivos/{{$d->documento}}" target="blank">ver documento</a></td>
             </tr>
             @endforeach
 </tbody>
@@ -31,3 +38,4 @@
      </div>
  </body>
  </html>
+ @endsection

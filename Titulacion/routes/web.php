@@ -36,6 +36,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::post('EnvioDatos',[App\Http\Controllers\RegistroController::class, 'Insertar']);
 
-Route::get('Listado',[App\Http\Controllers\ListadoController::class, 'index'])->name('datos.index');
+Route::get('Listado',[App\Http\Controllers\ListadoController::class, 'index'])->name('datos.index')->middleware('auth');
 
-Route::get('/registro', [App\Http\Controllers\RegistroController::class, 'create'])->name('datos.store');
+Route::get('/registro', [App\Http\Controllers\RegistroController::class, 'create'])->name('datos.store')->middleware('auth');
