@@ -166,9 +166,10 @@
                 {{ Form::text('cargodos', $hoja->cargodos, ['class' => 'form-control' . ($errors->has('cargodos') ? ' is-invalid' : ''), 'placeholder' => 'Desarrollador Web']) }}
                 {!! $errors->first('cargodos', '<div class="invalid-feedback">:message</div>') !!}
             </div>
+            
             <div class="col-4">
                 {{ Form::label('Descripcion') }}
-                {{ Form::text('descripcion', $hoja->descripciondos, ['class' => 'form-control' . ($errors->has('descripciondos') ? ' is-invalid' : ''), 'placeholder' => 'Micro-Servicios CRM']) }}
+                {{ Form::text('descripciondos', $hoja->descripciondos, ['class' => 'form-control' . ($errors->has('descripciondos') ? ' is-invalid' : ''), 'placeholder' => 'Micro-Servicios CRM']) }}
                 {!! $errors->first('descripciondos', '<div class="invalid-feedback">:message</div>') !!}
             </div>
             <div class="col-1">
